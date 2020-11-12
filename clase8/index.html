@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecuaciones en html</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+    <h1>ejemplos de ecuaciones en html</h1>
+    <p>para poner ecuaciones en una pagina web en html se puede usar MathJax. la fuerza electrica se puede calcular como $$\vec{F}=q\vec{E}$$</p>
+    <p>la fuerza electrica entre dos cargas es: $$\vec{F_{12}}=\frac{1}{4\pi\epsilon_0}$$</p>
+    <!-- $$ para escribirlo la ecuacion en la mitad en su propio parrafo. \ para diferencias comandos de letras. \vec{lo que va a tener el vector}. tengo que poner bien los {} para que le ponga bien la propiedad a lo que quiero. _ es sub
+    <h2>la circitacion del campo electrico es:</h2> -->
+    $$\Gamma(\vec{E})=\sum_{i=1}^n\vec{\Delta l}_i\cdot\vec{E}_i$$
+    <!-- c.dot - producto escalar, center dot -->
+    <p>la solucion de una ecuacion cuadratica de la forma \(ax^2+bx+c=0\) es la siguiente: $$x_{12}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+    <!--\(\) - forma linear. pm - mas o menos. sqrt - raiz. si es cubica pongo al lado [3] y dentro de {} pongo el argumento. -->
+    <h2>vamos a hacer un grafico</h2>
+    <p>para graficar vamos a usar plotly js</p>
+    <!--tengo que poner un espacio para graficar - lo pongo en un idv, que agrupa diferentes elementos y luego hacer rferencia a ellos como conjunto -->
+    <div id="miPrimerGrafico"></div>
+
+    <script src="grafico.js"></script>
+</body>
+</html>
